@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+
+\usepackage{multirow}
+\usepackage{graphicx}
+\graphicspath{{Imagenes/}}
+
+%opening
+\title{Control de versiones distribuido}
+\author{
+	Lacruz, Anthony\\
+	\texttt{anthony.lacruz@og.com.ve}
+}
+
+\date{\today}
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+
+	\begin{abstract}
+		En esta guía puedes encontrar: historia, metodología, consejos y administración de un sistema control versiones distribuido. Es importante destacar que está pensado para un equipo pequeño, donde todos trabajan local con la posibilidad de crear algún(algunos) usuario que otorgará los permisos de acceso a la fuente de archivos del proyecto.
+	\end{abstract}
+	
+	\newpage
+	\tableofcontents
+	\newpage
+	\pagenumbering{arabic}
+	
+	\section{Acerca de control de versiones}{		
+		\paragraph{¿Qué es el control de versiones, y por qué debería importarnos? }
+		{
+		El control de versiones es un sistema que registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del tiempo, de modo que puedas recuperar versiones específicas más adelante. A pesar de que los ejemplos de esta guía muestran código fuente como archivos bajo control de versiones, en realidad cualquier tipo de archivo que encuentres en un ordenador puede ponerse bajo control de versiones.
+		
+		Si eres diseñador gráfico o web, y quieres mantener cada versión de una imagen o diseño (algo que sin duda quieres), un sistema de control de versiones (Version Control System o VCS en inglés) es una elección muy sabia. Te permite revertir archivos a un estado anterior, revertir el proyecto entero a un estado anterior, comparar cambios a lo largo del tiempo, ver quién modificó por última vez algo que puede estar causando un problema, quién introdujo un error y cuándo, y mucho más. 
+		}
+	}
+	\section{Local, centralizado y distribuido}
+	{
+		\paragraph{Control de versiones local}{
+			un método de control de versiones usado por mucha gente es copiar los archivos a otro directorio (quizás indicando la fecha y hora en que lo hicieron, si son avispados). Este enfoque es muy común porque es muy simple, pero también tremendamente propenso a errores. Es fácil olvidar en qué directorio te encuentras, y guardar accidentalmente en el archivo equivocado o sobrescribir archivos que no querías.
+			\begin{figure}
+				\includegraphics[width=\linewidth]{localrepository.png}
+				\caption{A boat.}
+				\label{fig:boat1}
+			\end{figure}
+		}
+		\paragraph{Control de versiones centralizados}{
+		}
+		\paragraph{Control de versiones distribuido}{
+		}
+	}
+\end{document}

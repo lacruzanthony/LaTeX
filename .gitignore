@@ -1,0 +1,6 @@
+#Archivos creados por el compilador de LaTeX#
+*.aux
+*.log
+*.pdf
+*.gz
+*.toc
